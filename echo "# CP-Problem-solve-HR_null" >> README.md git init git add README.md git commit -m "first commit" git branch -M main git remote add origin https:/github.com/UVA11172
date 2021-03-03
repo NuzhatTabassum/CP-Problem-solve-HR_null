@@ -1,0 +1,25 @@
+#include<stdio.h>
+
+int main()
+{
+    int x,y,t,i;
+    scanf("%d",&t);
+    if(t<=15){
+    while(t--)
+    {
+        scanf("%d %d",&x ,&y);
+        if(x>y)
+        {
+            printf(">\n");
+        }
+        else if(x<y)
+        {
+            printf("<\n");
+        }
+        else
+        {
+            printf("=\n");
+        }
+    }
+    }
+}
