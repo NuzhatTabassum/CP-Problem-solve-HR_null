@@ -1,0 +1,26 @@
+#include<stdio.h>
+#include <stdlib.h>
+main()
+{
+    int i ,c=0 ,j,p,a[5][5],b=0,d=0,g,h,l,m;
+    for(i=0;i<5;i++){
+        for(j=0;j<5;j++)
+        {
+        scanf("%d",&a[i][j]);
+        if(a[i][j]==1)
+        {
+            b=i;
+            d=j;
+        }
+        }
+    }
+        g=2-b;
+        h=2-d;
+        l=abs(g);
+        m=abs(h);
+        c=l+m;
+
+        printf("%d",c);
+
+
+}
