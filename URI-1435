@@ -1,0 +1,52 @@
+#include <stdio.h>
+
+int main()
+{
+
+    int n,i,j;
+
+
+while(1){
+scanf("%d", &n);
+if(n==0)
+    break;
+    int len = n;
+    for( i=0;i<len;i++){
+        for(j=0;j<len;j++){
+                int min;
+
+            if(i<j)
+            {
+                min=i;
+            }
+        else
+        {
+            min=j;
+        }
+
+            if (min<len -i)
+            {
+                min=min;
+            }
+            else
+            {
+                min=len-i-1;
+            }
+
+            if(min<len-j-1)
+            {
+                min=min;
+            }
+  else
+  {
+      min=len-j-1;
+  }
+            printf("%3d ", min+1);
+        }
+        printf("\n");
+    }
+printf("\n");
+
+}
+    return 0;
+}
