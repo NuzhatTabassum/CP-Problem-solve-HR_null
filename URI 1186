@@ -1,0 +1,39 @@
+#include <stdio.h>
+
+
+int main()
+{
+
+    int i,j,r=11;
+    float m[12][12],f,sum , avrg;
+    char s;
+    scanf("%c",&s);
+    for(i=0;i<12;i++)
+    {
+        for(j=0;j<12;j++)
+        {
+            scanf("%f",&f);
+            m[i][j]=f;
+        }
+    }
+    for(i=1;i<12;i++)
+    {
+        for(j=r;j<12;j++)
+        {
+            sum+=m[i][j];
+        }
+        r--;
+    }
+    if(s=='S')
+    {
+        printf("%.1f\n", sum);}
+    else
+        printf("%.1f\n", sum / 66.0);
+    return 0;
+
+
+    }
+
+
+
+
