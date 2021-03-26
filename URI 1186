@@ -1,18 +1,17 @@
 #include <stdio.h>
 
-
 int main()
 {
 
     int i,j,r=11;
-    float m[12][12],f,sum , avrg;
+    double m[12][12],f,sum=0 , avrg;
     char s;
     scanf("%c",&s);
     for(i=0;i<12;i++)
     {
         for(j=0;j<12;j++)
         {
-            scanf("%f",&f);
+            scanf("%1f",&f);
             m[i][j]=f;
         }
     }
@@ -26,9 +25,9 @@ int main()
     }
     if(s=='S')
     {
-        printf("%.1f\n", sum);}
+        printf("%.1lf\n", sum);}
     else
-        printf("%.1f\n", sum / 66.0);
+        printf("%.1lf\n", sum / 66.0);
     return 0;
 
 
