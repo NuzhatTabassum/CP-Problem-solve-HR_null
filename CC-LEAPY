@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+int main()
+{
+    int t , y,i,m;
+    scanf("%d",&t);
+    while(t--)
+    {
+        scanf("%d",&y);
+        m=y;
+        if(y>=1900 &&  y<=7000){
+        if(y%4==0)
+            printf("It is a leap year.\n");
+            else
+            {
+                while(m%4!=0)
+                {
+                    m++;
+                }
+                printf("Not a leap year. Suggested: %d\n",m);
+            }
+        }
+    }
+}
