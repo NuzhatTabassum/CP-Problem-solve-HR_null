@@ -1,0 +1,29 @@
+#include <stdio.h>
+#include<stdlib.h>
+int main()
+{
+    int b,a,c,t;
+    scanf("%d",&t);
+    while(t--)
+    {
+        scanf("%d",&c);
+        a=function(c);
+        if(a<c)
+        {
+            b=c-a;
+        }
+        printf("%d %d\n",a,b);
+    }
+}
+int function(c)
+{
+    int s,n;
+    n=c;
+    s=rand();
+    if(s>=0 && s<=n )
+    {
+        return s;
+    }
+    else
+        function(n);
+}
